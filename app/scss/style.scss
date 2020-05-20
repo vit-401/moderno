@@ -27,7 +27,29 @@
   color: #fff;
   font-size: 12px;
 }
+.header__box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.basket{
+  width: 34px;
+  height: 34px;
+  background-color:$grey;
+  border-radius:50%;
+  position: relative;
+  margin-right: 26px;
+  &::before{
+    content: "\f07a";
+    font-family: 'icomoon';
+    font-size: 20px;    
+    position: absolute;
+    left: 5px;
+    top: 5px
+
+  }
+}
 .header__btn-login {
   background-color: $green;
 }
