@@ -79,14 +79,14 @@
   &-title {
     margin-bottom: 10px;
     font-size: 48px;
-    font-weight: 700;
+    @include f700;
     line-height: 72px;
   }
 
   &-text {
     margin-bottom: 50px;
     font-size: 20px;
-    font-weight: 500;
+    @include f500;
     line-height: 30px;
   }
 
@@ -103,13 +103,13 @@
       height: 56px;
       border: none;
       font-size: 14px;
-      font-weight: 500;
+      @include f500;
       outline: none;
       padding-left: 25px;
       padding-right: 60px;
 
       &::placeholder {
-        font-weight: 500;
+        @include f500;
         color: #90a4ae;
       }
     }
@@ -117,7 +117,7 @@
     button {
       position: absolute;
       border: none;
-      background-color: tranparent;
+      background-color: transparent;
       right: 20px;
       top: 16px;
     }
@@ -161,6 +161,7 @@
   flex-wrap: wrap;
 }
 
+
 .product__item {
   max-width: 442px;
   width: 100%;
@@ -182,7 +183,7 @@
     padding: 10px 30px;
     align-items: center;
     min-height: 90px;
-    font-weight: 500;
+    @include f500;
     border-bottom: 1px solid #e7ecf2;
   }
 
@@ -192,7 +193,7 @@
 
   &-title {
     color: $bg;
-    font-weight: 500;
+    @include f500;
     font-size: 18px;
     display: block;
 
@@ -236,7 +237,7 @@
 
     span {
       font-size: 14px;
-      font-weight: 500;
+      @include f500;
     }
   }
 
@@ -287,15 +288,17 @@
       display: inline-block;
       margin: 0 3px;
       cursor: pointer;
-      &.slick-active{
-        button{
+
+      &.slick-active {
+        button {
           background-color: $green;
         }
       }
+
       button {
         border-radius: 50%;
         background-color: rgb(232, 232, 232);
-        border:none;
+        border: none;
         font-size: 0;
         width: 16px;
         height: 16px;
@@ -312,3 +315,92 @@
 
 
 // end product-slider
+
+
+//start adventages
+.adventages {
+  padding: 110px 0;
+
+  background-color: $bg;
+}
+
+.adventages__title {
+  color: #fff;
+}
+
+.adventages__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.adventages__item {
+  max-width: 370px;
+  text-align: center;
+  padding: 0 15px;
+
+  &:hover {
+    .adventages__item-images {
+      background-color: $green;
+
+      svg {
+        color: #fff;
+      }
+    }
+
+    .adventages__item-title {
+      color: $green;
+    }
+  }
+
+  &-images {
+    width: 114px;
+    height: 114px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px;
+    transition: all .3s;
+  }
+
+  &-title {
+    margin-bottom: 25px;
+    color: #fff;
+    @include f500;
+    font-size: 24px;
+    transition: all .3s;
+  }
+
+  &-text {
+    font-size: 15px;
+
+  }
+
+
+
+  svg {
+    color: #000;
+    width: 50px;
+  }
+}
+
+.icosvg-1{
+  svg{
+    width: 50px;
+  }
+}
+.icosvg-2{
+  svg{
+    width: 70px;
+  }
+}
+.icosvg-3{
+  svg{
+    width: 86px;
+  }
+}
+
+
+
+//end adventages
