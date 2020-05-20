@@ -33,19 +33,31 @@
   align-items: center;
 }
 
+.Ellipse_1 {
+  background-color: #f5f5f5;
+  position: absolute;
+  left: 1333px;
+  top: 33px;
+  width: 34px;
+  height: 34px;
+  z-index: 539;
+}
+
+
 .basket{
   width: 34px;
   height: 34px;
-  background-color:$grey;
+  background-color:#f5f5f5;
   border-radius:50%;
   position: relative;
   margin-right: 26px;
   &::before{
     content: "\f07a";
     font-family: 'icomoon';
-    font-size: 20px;    
+    font-size: 14px;
+    color: #a0a0a0;
     position: absolute;
-    left: 5px;
+    left: 9px;
     top: 5px
 
   }
