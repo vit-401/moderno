@@ -25,6 +25,7 @@ body {
   font-size: 15px;
   line-height: 24px;
   color: $text;
+  overflow-x: hidden;
 }
 
 .header {
@@ -129,4 +130,16 @@ li {
     }
   }
 
+}
+.angle-right{
+  position: relative;
+  padding-left: 15px;
+  &::before{
+    content: "\f105";
+    font-family: 'icomoon';
+    position: absolute;
+    color: $green;
+    left: 0;
+    font-size: 14px;
+  }
 }
