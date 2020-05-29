@@ -2091,6 +2091,7 @@ button.icon-unsorted {
 
 .contact__form {
   width: 100%;
+
   input {
     display: inline-block;
     border: none;
@@ -2100,6 +2101,7 @@ button.icon-unsorted {
     background-color: #f1f4f5;
     width: 350px;
     margin-bottom: 30px;
+
     &::placeholder {
       font-size: 15px;
       color: #a7a7a7;
@@ -2108,13 +2110,14 @@ button.icon-unsorted {
 
   textarea {
     border: none;
-    padding:13px 17px;
+    padding: 13px 17px;
     width: 190px;
     background-color: #f1f4f5;
     width: 100%;
-    display:block;
+    display: block;
     resize: none;
     margin-bottom: 23px;
+
     &::placeholder {
       font-size: 15px;
       color: #a7a7a7;
@@ -2128,7 +2131,7 @@ button.icon-unsorted {
     text-transform: uppercase;
     text-align: center;
     @include f700;
-    color:#fff;
+    color: #fff;
     padding: 20px 5px;
     width: 190px;
   }
@@ -2153,6 +2156,120 @@ button.icon-unsorted {
 }
 
 // end contact
+// start settings
+.settings {
+  padding-bottom: 100px;
+}
+
+.product-one__tabs.settings__tabs {
+  display: flex;
+  .tabs {
+    display: block;
+    text-align: left;
+    max-width: 270px;
+    width: 100%;
+    margin-right: 30px;
+    border: 1px solid #dedede;
+    border-bottom: none;
+    height: 100%;
+    span {
+      display: block;
+      width: 100%;
+      border-bottom: #dedede;
+      background-color: #fff;
+      padding: 17px 17px 17px 50px;
+      border-bottom: 1px solid #dedede;
+      color:#707070;
+      font-size: 14px;
+      @include f500;
+      &.active{
+        border-bottom: 2px solid $green;
+        color:#37474f;
+        &::before{
+          color:$green;
+        }
+      }
+      &::before{
+        left: 24px;
+        color:#444;
+      }
+    }
+  }
+  .tabs .tab+.tab{
+    border-left: none;
+  }
+
+  .tab_content {
+    width: 100%;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.page-box{
+  border: 1px solid #dedede;
+  background-color: #fff;
+  min-height: 100%;
+}
+
+.page-box__title{
+  border-bottom: 1px solid #dedede;
+  padding: 18px 34px;
+  color:$bg;
+  font-size: 24px;
+  @include f500;
+
+}
+
+.page-box__content{
+  padding: 30px 35px 80px;
+  form{
+    text-align: center;
+    
+  }
+  button{
+    background-color: $green;
+    color:#fff;
+    padding: 10px 30px;
+    font-size: 15px;
+    max-width: 110px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+  }
+}
+.settings__line{
+  margin-bottom: 21px;
+  display:flex;
+  label{
+    width: 260px;
+    text-align: left;
+    color:#444;
+    align-items: center;
+  }
+  input{
+    max-width: 540px;
+    width: 100%;
+    border: 1px solid #dedede;
+    background-color: #f9f9f9;
+    color:#000;
+    height: 40px;
+    padding: 0 10px;
+  }
+  select{
+    max-width: 540px;
+    width: 100%;
+    border: 1px solid #dedede;
+    background-color: #f9f9f9;
+    color:#707070;
+    height: 40px;
+    padding: 0 10px;
+  }
+
+}
+// end settings
 
 
 
