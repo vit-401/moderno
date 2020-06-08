@@ -26,6 +26,7 @@ body {
   line-height: 24px;
   color: $text;
   overflow-x: hidden;
+  background-color: #F4F6F5;
 }
 
 .header {
@@ -80,7 +81,7 @@ li {
   }
 }
 
-.page-content{
+.page-content {
   background-color: $grey;
 }
 
@@ -108,6 +109,7 @@ li {
     li {
       display: inline-block;
       position: relative;
+
       &+li {
         padding-left: 24px;
 
@@ -118,23 +120,28 @@ li {
           color: $green;
         }
       }
-      &:last-child{
+
+      &:last-child {
+
         a,
-        span{
+        span {
           color: $bg;
         }
       }
-      a{
+
+      a {
         color: #b0bec5;
       }
     }
   }
 
 }
-.angle-right{
+
+.angle-right {
   position: relative;
   padding-left: 15px;
-  &::before{
+
+  &::before {
     content: "\f105";
     font-family: 'icomoon';
     position: absolute;
